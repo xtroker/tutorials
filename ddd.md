@@ -1,0 +1,5 @@
+- Understand the MVC Pattern
+  - Model
+  - View
+  - Controller
+- CRUD Conventions
