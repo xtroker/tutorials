@@ -13,7 +13,7 @@ $ chmod a+x certbot-auto
 $ nginx -s stop
 ```
 
-### 3. Write a config file
+## 3. Write a config file
 
 ```
 $ mkdir -p /etc/letsencrypt/configs/
@@ -34,7 +34,7 @@ $ nano /etc/letsencrypt/configs/groupmaps.com.conf
   text = True
   ```
 
-### 4. Execute the certbot
+## 4. Execute the certbot
 
 ```
 $ sudo ./certbot-auto --standalone --config /etc/letsencrypt/configs/groupmaps.com.conf certonly
@@ -66,7 +66,7 @@ This didn't worked first time but We found a solution [here](https://stackoverfl
   >   again. To non-interactively renew _all_ of your certificates, run
   >   "certbot-auto renew"
 
-### 5. Lets modify the nginx configuration
+## 5. Lets modify the nginx configuration
 
 ```
 $ nano /etc/nginx/nginx.conf
@@ -174,23 +174,23 @@ http {
 }
 ```
 
-### 6. Reload **nginx** config
+## 6. Reload **nginx** config
 
 ```
 $ nginx -s reload
 ```
 
-### 7. Start the server
+## 7. Start the server
 
 ```
 $ service nginx start
 ```
 
-### 8. Check in a brower that everything went well
+## 8. Check in a brower that everything went well
 
     https://devapi.groupmaps.com/api/
 
-### 9. Renewing the certificate
+## 9. Renewing the certificate
 
 To Manually renew the certificates only run the following line
 
