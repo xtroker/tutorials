@@ -94,6 +94,17 @@
   - Facades
   - Service Provider
 
+## Security
+  - Authentication 
+  - Authorization 
+    - Gates
+    - Policies
+    - Roles 
+    - Abilities
+
 ## Deeper Concepts
   - Mail
+  - Notifications
+  - Events
+
   
